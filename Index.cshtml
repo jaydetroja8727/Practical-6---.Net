@@ -1,0 +1,232 @@
+﻿@{
+    ViewBag.Title = "Home";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #eef7f5;
+            color: #173b35;
+        }
+
+        .hero {
+            max-width: 1100px;
+            margin: 50px auto;
+            padding: 20px;
+        }
+
+        .hero-box {
+            background: white;
+            border-radius: 20px;
+            padding: 60px;
+            border: 1px solid #d7ebe7;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 40px;
+        }
+
+        .hero-text {
+            max-width: 620px;
+        }
+
+            .hero-text h1 {
+                font-size: 45px;
+                margin: 0 0 18px;
+            }
+
+                .hero-text h1 span {
+                    color: #0f766e;
+                }
+
+            .hero-text p {
+                color: #60736f;
+                line-height: 1.7;
+                font-size: 17px;
+                margin-bottom: 28px;
+            }
+
+        .button {
+            display: inline-block;
+            background: #0f766e;
+            color: white;
+            padding: 13px 24px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+            .button:hover {
+                background: #115e59;
+            }
+
+        .hero-icon {
+            width: 190px;
+            height: 190px;
+            background: #ccfbf1;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 85px;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+            .section-title h2 {
+                margin-bottom: 8px;
+            }
+
+            .section-title p {
+                color: #60736f;
+            }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 22px;
+        }
+
+        .feature {
+            background: white;
+            padding: 28px;
+            border-radius: 14px;
+            border: 1px solid #d7ebe7;
+        }
+
+        .feature-icon {
+            font-size: 35px;
+            margin-bottom: 15px;
+        }
+
+        .feature h3 {
+            margin: 0 0 10px;
+        }
+
+        .feature p {
+            color: #60736f;
+            line-height: 1.6;
+        }
+
+        .footer {
+            margin-top: 50px;
+            background: #123c36;
+            color: #d5f5f0;
+            text-align: center;
+            padding: 22px;
+        }
+
+        @@media (max-width: 700px) {
+            .hero-box {
+                padding: 35px;
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .hero-text h1 {
+                font-size: 34px;
+            }
+
+            .features {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="hero">
+
+        <div class="hero-box">
+
+            <div class="hero-text">
+
+                <h1>
+                    Everything You Need,
+                    <span>In One Place.</span>
+                </h1>
+
+                <p>
+                    Welcome to our product catalog. Explore technology,
+                    accessories and smart devices with simple product
+                    information and transparent pricing.
+                </p>
+
+                <a href="@Url.Action("Index", "Product")" class="button">
+                    Explore Products
+                </a>
+
+            </div>
+
+            <div class="hero-icon">
+                🛒
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="container">
+
+        <div class="section-title">
+            <h2>What We Offer</h2>
+            <p>A simple way to discover products</p>
+        </div>
+
+        <div class="features">
+
+            <div class="feature">
+                <div class="feature-icon">💻</div>
+                <h3>Technology</h3>
+                <p>
+                    Discover laptops, smartphones and other
+                    useful technology products.
+                </p>
+            </div>
+
+            <div class="feature">
+                <div class="feature-icon">🎧</div>
+                <h3>Accessories</h3>
+                <p>
+                    Browse keyboards, earbuds, speakers and
+                    other useful accessories.
+                </p>
+            </div>
+
+            <div class="feature">
+                <div class="feature-icon">💰</div>
+                <h3>Clear Pricing</h3>
+                <p>
+                    Product prices are displayed clearly so
+                    you can easily compare products.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="footer">
+        Product Catalog | ASP.NET MVC Application
+    </div>
+
+</body>
+</html>

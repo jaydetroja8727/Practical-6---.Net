@@ -1,0 +1,160 @@
+﻿@{
+    ViewBag.Title = "Contact";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #eef7f5;
+            color: #173b35;
+        }
+
+        .header {
+            background: #0f766e;
+            color: white;
+            text-align: center;
+            padding: 45px 20px;
+        }
+
+            .header h1 {
+                margin: 0 0 10px;
+                font-size: 36px;
+            }
+
+            .header p {
+                margin: 0;
+                color: #d5f5f0;
+            }
+
+        .container {
+            max-width: 850px;
+            margin: 45px auto;
+            padding: 0 20px;
+        }
+
+        .contact-box {
+            background: white;
+            padding: 40px;
+            border-radius: 16px;
+            border: 1px solid #d7ebe7;
+        }
+
+            .contact-box h2 {
+                margin-top: 0;
+                color: #0f766e;
+            }
+
+            .contact-box > p {
+                color: #60736f;
+                line-height: 1.7;
+            }
+
+        .contact-info {
+            margin-top: 30px;
+        }
+
+        .info {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            background: #f0fdfa;
+            padding: 20px;
+            margin-bottom: 16px;
+            border-radius: 12px;
+        }
+
+        .icon {
+            width: 50px;
+            height: 50px;
+            background: #ccfbf1;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 25px;
+        }
+
+        .info h3 {
+            margin: 0 0 6px;
+            color: #173b35;
+        }
+
+        .info p {
+            margin: 0;
+            color: #60736f;
+        }
+
+        .footer {
+            margin-top: 50px;
+            background: #123c36;
+            color: #d5f5f0;
+            text-align: center;
+            padding: 22px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>Contact Us</h1>
+        <p>Have a question? Get in touch with us.</p>
+    </div>
+
+    <div class="container">
+
+        <div class="contact-box">
+
+            <h2>Get In Touch</h2>
+
+            <p>
+                For any questions or information, you can contact us
+                using the details provided below.
+            </p>
+
+            <div class="contact-info">
+
+                <div class="info">
+                    <div class="icon">📍</div>
+                    <div>
+                        <h3>Location</h3>
+                        <p>Jamnagar, Gujarat, India</p>
+                    </div>
+                </div>
+
+                <div class="info">
+                    <div class="icon">📞</div>
+                    <div>
+                        <h3>Phone</h3>
+                        <p>9876543210</p>
+                    </div>
+                </div>
+
+                <div class="info">
+                    <div class="icon">✉️</div>
+                    <div>
+                        <h3>Email</h3>
+                        <p>jaydetroja2535@gmail.com</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="footer">
+        Product Catalog | ASP.NET MVC Application
+    </div>
+
+</body>
+</html>
